@@ -6,7 +6,7 @@
     <!-- <meta http-equiv="refresh" content="0; URL=/" /> -->
     <script>
       // Redirect using JS to preserve the path
-      const redirectTo = '/' + location.pathname + location.search + location.hash;
+      const redirectTo = location.pathname + location.search + location.hash;
       sessionStorage.redirect = redirectTo;
       location.replace('/');
     </script>
