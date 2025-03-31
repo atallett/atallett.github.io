@@ -8,8 +8,6 @@
       // Redirect using JS to preserve the path
       const redirectTo = location.pathname + location.search + location.hash;
       sessionStorage.setItem('redirectPath', redirectTo);
-      console.log('Redirecting to:', redirectTo);
-      alert('Wait');
       location.replace('/');
     </script>
   </head>
