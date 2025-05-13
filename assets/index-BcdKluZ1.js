@@ -61,7 +61,7 @@ Please change the parent <Route path="${p}"> to <Route path="${p==="/"?"*":`${p}
       As it was a charity project scope was more vital than ever as we had a budget with no contingency in place.  `,`Personas and scenarios acted as a blueprint for the design and development process.
       It provided a reference point for deciding which features, content and design elements
       were most important based on what real users needed.`,`By creating personas, I was able to empathise with different user types and make informed decisions
-      that align with user preferences. This lead to a more intuitive and user-friendly design.`],images:[{src1:"projects/pact/pact2.png",src2:""},{src1:"projects/pact/pact1.png",src2:""},{src1:"projects/pact/pact3.png",src2:""}]},{title:"Godiva",description:"Godiva",next:"thinkrugs",prev:"pact",lines:[`Godiva is a premium chocolate company that originated in Belgium in 1926.
+      that align with user preferences. This lead to a more intuitive and user-friendly design.`],images:[{src1:"projects/pact/pact1.jpg",src2:""},{src1:"projects/pact/pact1.png",src2:""}]},{title:"Godiva",description:"Godiva",next:"thinkrugs",prev:"pact",lines:[`Godiva is a premium chocolate company that originated in Belgium in 1926.
     It was founded by the Draps family and is known for crafting high-quality chocolates with fine ingredients.
     Godiva’s name and heritage are deeply tied to Belgium, and the brand emphasises its Belgian roots in its marketing.
     However, not all Godiva chocolates are made in Belgium; much of the production, especially for the U.S. market,
