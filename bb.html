@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blondie Brownie - Baked with Love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#D4A373',
+secondary: '#E9EDC9',
+beige: '#F9F5EB',
+darkBrown: '#7F5539',
+lightBrown: '#CCD5AE'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+},
+fontFamily: {
+'playfair': ['"Playfair Display"', 'serif'],
+'poppins': ['Poppins', 'sans-serif']
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #FFFCF7;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=Elegant%2520flatlay%2520of%2520delicious%2520homemade%2520blondies%2520and%2520brownies%2520on%2520a%2520rustic%2520wooden%2520table%2520with%2520scattered%2520ingredients%2520like%2520chocolate%2520chips%252C%2520nuts%252C%2520and%2520a%2520cup%2520of%2520coffee%2520nearby.%2520The%2520scene%2520is%2520bathed%2520in%2520warm%252C%2520natural%2520light%2520with%2520a%2520soft%2520beige%2520background%2520that%2520transitions%2520to%2520white%2520on%2520the%2520left%2520side.&width=1920&height=800&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.hero-overlay {
+background: linear-gradient(90deg, rgba(255,252,247,0.95) 0%, rgba(255,252,247,0.85) 40%, rgba(255,252,247,0.4) 70%, rgba(255,252,247,0) 100%);
+}
+.section-title {
+font-family: 'Playfair Display', serif;
+}
+.product-card:hover .product-details {
+transform: translateY(0);
+opacity: 1;
+}
+.product-details {
+transform: translateY(20px);
+opacity: 0;
+transition: all 0.3s ease;
+}
+.category-box {
+transition: transform 0.3s ease;
+}
+.category-box:hover {
+transform: translateY(-5px);
+}
+input:focus, button:focus {
+outline: none;
+}
+.custom-checkbox {
+appearance: none;
+-webkit-appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #D4A373;
+border-radius: 4px;
+position: relative;
+cursor: pointer;
+}
+.custom-checkbox:checked {
+background-color: #D4A373;
+}
+.custom-checkbox:checked::after {
+content: "";
+position: absolute;
+top: 2px;
+left: 6px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+</style>
+</head>
+<body>
+<!-- Header Section -->
+<header class="bg-beige shadow-sm fixed w-full z-50">
+<div class="container mx-auto px-4 py-3">
+<div class="flex items-center justify-between">
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-darkBrown hover:text-primary font-medium transition-colors">Shop</a>
+<a href="#" class="text-darkBrown hover:text-primary font-medium transition-colors">About Us</a>
+</nav>
+<div class="font-['Pacifico'] text-3xl text-primary">Blondie Brownie</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-darkBrown hover:text-primary font-medium transition-colors">Café</a>
+<a href="#" class="text-darkBrown hover:text-primary font-medium transition-colors">Contact</a>
+<div class="relative">
+<div class="w-10 h-10 flex items-center justify-center text-darkBrown hover:text-primary cursor-pointer">
+<i class="ri-shopping-bag-line ri-lg"></i>
+</div>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">3</span>
+</div>
+</nav>
+<div class="md:hidden flex items-center">
+<div class="relative mr-4">
+<div class="w-10 h-10 flex items-center justify-center text-darkBrown">
+<i class="ri-shopping-bag-line ri-lg"></i>
+</div>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">3</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center text-darkBrown">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section h-screen flex items-center relative">
+<div class="hero-overlay absolute inset-0"></div>
+<div class="container mx-auto px-4 z-10">
+<div class="w-full md:w-1/2 lg:w-2/5">
+<h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-darkBrown mb-4">Baked with Love in Northern England</h1>
+<p class="text-lg md:text-xl text-darkBrown/80 mb-8">Indulge in our handcrafted blondies and brownies, made with premium ingredients and family recipes passed down through generations.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Order Now</button>
+<a href="https://readdy.ai/home/6eda04c2-1aa1-4011-92fa-f2761d4d9bc3/b78bc321-5a0b-4d09-abe4-e9688771b4a7" data-readdy="true" class="inline-block border-2 border-primary text-primary px-8 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-primary/10 transition-colors">Browse Our Treats</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products Grid -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="section-title text-3xl md:text-4xl font-bold text-center text-darkBrown mb-2">Our Signature Treats</h2>
+<p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Discover our most beloved creations, each crafted with care and premium ingredients for an unforgettable taste experience.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="product-card bg-white rounded shadow-md overflow-hidden group">
+<div class="relative overflow-hidden h-64">
+<img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520a%2520decadent%2520chocolate%2520brownie%2520with%2520a%2520fudgy%2520center%2520and%2520slightly%2520crackled%2520top%252C%2520garnished%2520with%2520a%2520light%2520dusting%2520of%2520cocoa%2520powder.%2520The%2520brownie%2520sits%2520on%2520a%2520rustic%2520wooden%2520surface%2520with%2520some%2520chocolate%2520chunks%2520and%2520nuts%2520scattered%2520nearby.%2520Warm%252C%2520natural%2520lighting%2520creates%2520an%2520inviting%2520atmosphere.&width=600&height=600&seq=2&orientation=squarish"
+alt="Classic Chocolate Brownie"
+class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-white text-primary px-4 py-2 !rounded-button whitespace-nowrap transform translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-playfair text-xl font-semibold text-darkBrown">Classic Chocolate Brownie</h3>
+<p class="text-gray-600 text-sm mt-2">Rich, fudgy brownies made with premium Belgian chocolate and a hint of espresso.</p>
+<div class="flex justify-between items-center mt-4">
+<span class="text-primary font-semibold">£3.95</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="product-card bg-white rounded shadow-md overflow-hidden group">
+<div class="relative overflow-hidden h-64">
+<img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520a%2520golden%2520blondie%2520bar%2520with%2520white%2520chocolate%2520chunks%2520and%2520macadamia%2520nuts%2520visible%2520throughout.%2520The%2520blondie%2520has%2520a%2520perfect%2520buttery%2520sheen%2520and%2520sits%2520on%2520a%2520rustic%2520wooden%2520surface%2520with%2520some%2520white%2520chocolate%2520pieces%2520and%2520nuts%2520scattered%2520nearby.%2520Warm%252C%2520natural%2520lighting%2520creates%2520an%2520inviting%2520atmosphere.&width=600&height=600&seq=3&orientation=squarish"
+alt="White Chocolate Macadamia Blondie"
+class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-white text-primary px-4 py-2 !rounded-button whitespace-nowrap transform translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-playfair text-xl font-semibold text-darkBrown">White Chocolate Macadamia Blondie</h3>
+<p class="text-gray-600 text-sm mt-2">Buttery blondies loaded with creamy white chocolate chunks and crunchy macadamia nuts.</p>
+<div class="flex justify-between items-center mt-4">
+<span class="text-primary font-semibold">£4.25</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="product-card bg-white rounded shadow-md overflow-hidden group">
+<div class="relative overflow-hidden h-64">
+<img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520a%2520salted%2520caramel%2520brownie%2520with%2520visible%2520caramel%2520swirls%2520and%2520a%2520sprinkle%2520of%2520sea%2520salt%2520on%2520top.%2520The%2520brownie%2520has%2520a%2520glossy%2520surface%2520and%2520sits%2520on%2520a%2520rustic%2520wooden%2520surface%2520with%2520some%2520caramel%2520pieces%2520and%2520salt%2520flakes%2520scattered%2520nearby.%2520Warm%252C%2520natural%2520lighting%2520creates%2520an%2520inviting%2520atmosphere.&width=600&height=600&seq=4&orientation=squarish"
+alt="Salted Caramel Brownie"
+class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-white text-primary px-4 py-2 !rounded-button whitespace-nowrap transform translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-playfair text-xl font-semibold text-darkBrown">Salted Caramel Brownie</h3>
+<p class="text-gray-600 text-sm mt-2">Decadent chocolate brownies with homemade caramel swirls and Maldon sea salt flakes.</p>
+<div class="flex justify-between items-center mt-4">
+<span class="text-primary font-semibold">£4.50</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="product-card bg-white rounded shadow-md overflow-hidden group">
+<div class="relative overflow-hidden h-64">
+<img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520a%2520raspberry%2520white%2520chocolate%2520blondie%2520with%2520visible%2520raspberry%2520swirls%2520and%2520white%2520chocolate%2520chunks.%2520The%2520blondie%2520has%2520a%2520beautiful%2520pink%2520marbled%2520effect%2520and%2520sits%2520on%2520a%2520rustic%2520wooden%2520surface%2520with%2520some%2520fresh%2520raspberries%2520and%2520white%2520chocolate%2520pieces%2520scattered%2520nearby.%2520Warm%252C%2520natural%2520lighting%2520creates%2520an%2520inviting%2520atmosphere.&width=600&height=600&seq=5&orientation=squarish"
+alt="Raspberry White Chocolate Blondie"
+class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-white text-primary px-4 py-2 !rounded-button whitespace-nowrap transform translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-playfair text-xl font-semibold text-darkBrown">Raspberry White Chocolate Blondie</h3>
+<p class="text-gray-600 text-sm mt-2">Buttery blondies with fresh raspberry swirls and chunks of creamy white chocolate.</p>
+<div class="flex justify-between items-center mt-4">
+<span class="text-primary font-semibold">£4.25</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="border-2 border-primary text-primary px-8 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-primary/10 transition-colors">View All Products</button>
+</div>
+</div>
+</section>
+<!-- Café Section -->
+<section class="py-20 bg-beige">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row items-center gap-8">
+<div class="w-full lg:w-1/2">
+<div class="grid grid-cols-2 gap-4">
+<div class="rounded-lg overflow-hidden h-64">
+<img src="https://readdy.ai/api/search-image?query=Interior%2520of%2520a%2520cozy%252C%2520modern%2520cafe%2520with%2520wooden%2520tables%252C%2520comfortable%2520seating%252C%2520and%2520warm%2520lighting.%2520The%2520space%2520has%2520a%2520rustic%2520yet%2520elegant%2520feel%2520with%2520some%2520plants%2520and%2520baked%2520goods%2520visible%2520in%2520the%2520background.%2520Large%2520windows%2520allow%2520natural%2520light%2520to%2520flood%2520the%2520space%252C%2520creating%2520a%2520welcoming%2520atmosphere.&width=600&height=600&seq=6&orientation=squarish"
+alt="Café Interior"
+class="w-full h-full object-cover object-top">
+</div>
+<div class="rounded-lg overflow-hidden h-64">
+<img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520a%2520beautifully%2520crafted%2520latte%2520with%2520intricate%2520latte%2520art%2520on%2520top%252C%2520sitting%2520on%2520a%2520wooden%2520table%2520next%2520to%2520a%2520small%2520plate%2520with%2520a%2520brownie.%2520The%2520coffee%2520is%2520served%2520in%2520an%2520elegant%2520ceramic%2520cup%2520with%2520soft%252C%2520natural%2520lighting%2520creating%2520a%2520warm%2520and%2520inviting%2520atmosphere.&width=600&height=600&seq=7&orientation=squarish"
+alt="Coffee and Brownie"
+class="w-full h-full object-cover object-top">
+</div>
+<div class="rounded-lg overflow-hidden h-64 col-span-2">
+<img src="https://readdy.ai/api/search-image?query=A%2520display%2520counter%2520in%2520a%2520cafe%2520showcasing%2520an%2520assortment%2520of%2520freshly%2520baked%2520brownies%2520and%2520blondies%2520arranged%2520on%2520elegant%2520cake%2520stands%2520and%2520platters.%2520The%2520treats%2520are%2520displayed%2520alongside%2520coffee%2520brewing%2520equipment%2520in%2520a%2520warm%252C%2520inviting%2520setting%2520with%2520soft%2520lighting%2520highlighting%2520the%2520delicious%2520baked%2520goods.&width=1200&height=600&seq=8&orientation=landscape"
+alt="Café Display Counter"
+class="w-full h-full object-cover object-top">
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<h2 class="section-title text-3xl md:text-4xl font-bold text-darkBrown mb-4">Visit Our Café</h2>
+<p class="text-gray-700 mb-6">Experience the warm, inviting atmosphere of our café in the heart of Northern England. Enjoy our freshly baked treats alongside specialty coffees and teas, perfect for a relaxing break or catching up with friends.</p>
+<div class="bg-white p-6 rounded-lg shadow-md mb-6">
+<h3 class="font-playfair text-xl font-semibold text-darkBrown mb-4">Café Menu Highlights</h3>
+<ul class="space-y-3">
+<li class="flex justify-between">
+<span class="text-gray-700">Specialty Coffee</span>
+<span class="text-primary font-medium">from £2.95</span>
+</li>
+<li class="flex justify-between">
+<span class="text-gray-700">Artisan Teas</span>
+<span class="text-primary font-medium">from £2.50</span>
+</li>
+<li class="flex justify-between">
+<span class="text-gray-700">Brownie & Coffee Combo</span>
+<span class="text-primary font-medium">£5.95</span>
+</li>
+<li class="flex justify-between">
+<span class="text-gray-700">Afternoon Tea for Two</span>
+<span class="text-primary font-medium">£19.95</span>
+</li>
+</ul>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md mb-6">
+<h3 class="font-playfair text-xl font-semibold text-darkBrown mb-4">Opening Hours</h3>
+<ul class="space-y-2">
+<li class="flex justify-between">
+<span class="text-gray-700">Monday - Friday</span>
+<span class="text-gray-700">8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="text-gray-700">Saturday</span>
+<span class="text-gray-700">9:00 AM - 7:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="text-gray-700">Sunday</span>
+<span class="text-gray-700">10:00 AM - 5:00 PM</span>
+</li>
+</ul>
+</div>
+<button class="bg-primary text-white px-8 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Visit Us</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="w-full lg:w-1/2">
+<h2 class="section-title text-3xl md:text-4xl font-bold text-darkBrown mb-4">Our Story</h2>
+<p class="text-gray-700 mb-6">Blondie Brownie began in 2018 in our family kitchen in Yorkshire. What started as weekend baking sessions with our grandmother's recipes quickly blossomed into something special when friends and neighbors couldn't get enough of our treats.</p>
+<p class="text-gray-700 mb-6">Today, our small family business continues to use those same cherished recipes, with each brownie and blondie still mixed, baked, and packaged by hand. We source the finest ingredients locally whenever possible and take pride in creating treats that bring joy to our community.</p>
+<p class="text-gray-700 mb-6">Our café opened in 2021, creating a warm space where people could enjoy our baked goods alongside expertly crafted beverages in a cozy, welcoming environment.</p>
+<p class="text-gray-700 italic">"We don't just bake treats, we bake memories."</p>
+<p class="text-primary font-medium">— The Williams Family</p>
+</div>
+<div class="w-full lg:w-1/2">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-full h-full border-2 border-primary rounded-lg"></div>
+<img src="https://readdy.ai/api/search-image?query=A%2520warm%252C%2520candid%2520scene%2520of%2520a%2520family%2520baking%2520together%2520in%2520a%2520bright%252C%2520modern%2520kitchen.%2520A%2520middle-aged%2520woman%2520is%2520showing%2520a%2520younger%2520woman%2520how%2520to%2520mix%2520brownie%2520batter%2520while%2520an%2520older%2520woman%2520watches%2520with%2520a%2520smile.%2520There%2520are%2520ingredients%2520spread%2520across%2520the%2520counter%2520and%2520some%2520finished%2520brownies%2520cooling%2520nearby.%2520The%2520atmosphere%2520is%2520joyful%2520and%2520filled%2520with%2520love.&width=800&height=600&seq=9&orientation=landscape"
+alt="Family Baking Together"
+class="w-full h-full object-cover rounded-lg relative z-10">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Categories -->
+<section class="py-20 bg-beige">
+<div class="container mx-auto px-4">
+<h2 class="section-title text-3xl md:text-4xl font-bold text-center text-darkBrown mb-2">Explore Our Collections</h2>
+<p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Discover our carefully crafted range of treats and beverages, each made with premium ingredients and lots of love.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Blondies Category -->
+<div class="category-box bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=An%2520artful%2520arrangement%2520of%2520various%2520blondies%2520showcasing%2520different%2520flavors%2520and%2520toppings.%2520The%2520blondies%2520feature%2520visible%2520chunks%2520of%2520white%2520chocolate%252C%2520nuts%252C%2520and%2520fruit%2520swirls%252C%2520all%2520arranged%2520on%2520a%2520wooden%2520board%2520with%2520some%2520ingredients%2520scattered%2520around.%2520The%2520lighting%2520is%2520bright%2520and%2520natural%252C%2520highlighting%2520the%2520golden%2520color%2520and%2520texture%2520of%2520the%2520blondies.&width=600&height=600&seq=10&orientation=squarish"
+alt="Blondies Collection"
+class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-semibold text-darkBrown mb-3">Blondies Collection</h3>
+<p class="text-gray-600 mb-6">Our buttery, vanilla-based treats filled with delicious mix-ins from white chocolate to seasonal fruits.</p>
+<button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Explore Blondies</button>
+</div>
+</div>
+<!-- Brownies Category -->
+<div class="category-box bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=An%2520artful%2520arrangement%2520of%2520various%2520brownies%2520showcasing%2520different%2520flavors%2520and%2520toppings.%2520The%2520brownies%2520feature%2520visible%2520chunks%2520of%2520chocolate%252C%2520nuts%252C%2520and%2520caramel%2520swirls%252C%2520all%2520arranged%2520on%2520a%2520wooden%2520board%2520with%2520some%2520ingredients%2520scattered%2520around.%2520The%2520lighting%2520is%2520bright%2520and%2520natural%252C%2520highlighting%2520the%2520rich%2520chocolate%2520color%2520and%2520fudgy%2520texture%2520of%2520the%2520brownies.&width=600&height=600&seq=11&orientation=squarish"
+alt="Brownies Collection"
+class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-semibold text-darkBrown mb-3">Brownies Collection</h3>
+<p class="text-gray-600 mb-6">Rich, chocolatey indulgences in various flavors from classic fudge to innovative combinations.</p>
+<button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Explore Brownies</button>
+</div>
+</div>
+<!-- Coffee & Tea Category -->
+<div class="category-box bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=An%2520elegant%2520display%2520of%2520coffee%2520and%2520tea%2520offerings%2520in%2520a%2520cafe%2520setting.%2520Various%2520coffee%2520drinks%2520with%2520latte%2520art%2520and%2520specialty%2520teas%2520in%2520glass%2520teapots%2520are%2520arranged%2520on%2520a%2520wooden%2520counter%2520alongside%2520some%2520small%2520treats.%2520The%2520lighting%2520is%2520warm%2520and%2520inviting%252C%2520highlighting%2520the%2520rich%2520colors%2520and%2520textures%2520of%2520the%2520beverages.&width=600&height=600&seq=12&orientation=squarish"
+alt="Coffee & Tea Selection"
+class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-semibold text-darkBrown mb-3">Coffee & Tea Selection</h3>
+<p class="text-gray-600 mb-6">Expertly crafted beverages using locally roasted coffee beans and premium loose-leaf teas.</p>
+<button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Explore Beverages</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram Feed Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="section-title text-3xl md:text-4xl font-bold text-center text-darkBrown mb-2">Share Your Moments</h2>
+<p class="text-center text-gray-600 mb-4 max-w-2xl mx-auto">Follow us on Instagram and tag your photos with #BlondieBrownie</p>
+<p class="text-center text-primary font-medium mb-12">@blondie_brownie</p>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<div class="aspect-square overflow-hidden rounded-lg group relative">
+<img src="https://readdy.ai/api/search-image?query=A%2520customer%2520holding%2520up%2520a%2520brownie%2520in%2520a%2520cafe%2520setting%2520with%2520a%2520coffee%2520cup%2520visible%2520on%2520the%2520table.%2520The%2520image%2520has%2520a%2520casual%252C%2520Instagram-worthy%2520style%2520with%2520warm%2520lighting%2520and%2520a%2520slightly%2520filtered%2520look.%2520The%2520person%2527s%2520face%2520is%2520not%2520fully%2520visible%252C%2520focusing%2520instead%2520on%2520the%2520hand%2520holding%2520the%2520treat.&width=400&height=400&seq=13&orientation=squarish"
+alt="Instagram Post 1"
+class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-instagram-line ri-lg"></i>
+</div>
+</div>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg group relative">
+<img src="https://readdy.ai/api/search-image?query=A%2520top-down%2520view%2520of%2520a%2520cafe%2520table%2520with%2520a%2520plate%2520of%2520assorted%2520brownies%2520and%2520blondies%2520next%2520to%2520two%2520cups%2520of%2520coffee.%2520The%2520image%2520has%2520a%2520casual%252C%2520Instagram-worthy%2520style%2520with%2520warm%2520lighting%2520and%2520a%2520slightly%2520filtered%2520look.%2520Some%2520small%2520flowers%2520or%2520decorative%2520elements%2520are%2520visible%2520on%2520the%2520table.&width=400&height=400&seq=14&orientation=squarish"
+alt="Instagram Post 2"
+class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-instagram-line ri-lg"></i>
+</div>
+</div>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg group relative">
+<img src="https://readdy.ai/api/search-image?query=A%2520close-up%2520of%2520hands%2520breaking%2520apart%2520a%2520fudgy%2520brownie%2520to%2520show%2520the%2520gooey%2520center.%2520The%2520image%2520has%2520a%2520casual%252C%2520Instagram-worthy%2520style%2520with%2520warm%2520lighting%2520and%2520a%2520slightly%2520filtered%2520look.%2520Some%2520crumbs%2520are%2520visible%2520on%2520the%2520surface%2520and%2520the%2520texture%2520of%2520the%2520brownie%2520is%2520highlighted.&width=400&height=400&seq=15&orientation=squarish"
+alt="Instagram Post 3"
+class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-instagram-line ri-lg"></i>
+</div>
+</div>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg group relative">
+<img src="https://readdy.ai/api/search-image?query=A%2520gift%2520box%2520of%2520assorted%2520brownies%2520and%2520blondies%2520with%2520elegant%2520packaging%2520and%2520a%2520ribbon.%2520The%2520image%2520has%2520a%2520casual%252C%2520Instagram-worthy%2520style%2520with%2520warm%2520lighting%2520and%2520a%2520slightly%2520filtered%2520look.%2520The%2520box%2520is%2520partially%2520open%2520to%2520show%2520the%2520treats%2520inside.&width=400&height=400&seq=16&orientation=squarish"
+alt="Instagram Post 4"
+class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-instagram-line ri-lg"></i>
+</div>
+</div>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg group relative">
+<img src="https://readdy.ai/api/search-image?query=A%2520person%2520enjoying%2520a%2520blondie%2520in%2520the%2520cafe%2520with%2520a%2520book%2520open%2520nearby.%2520The%2520image%2520has%2520a%2520casual%252C%2520Instagram-worthy%2520style%2520with%2520warm%2520lighting%2520and%2520a%2520slightly%2520filtered%2520look.%2520Only%2520the%2520hands%2520and%2520part%2520of%2520the%2520person%2520are%2520visible%252C%2520focusing%2520on%2520the%2520cozy%2520atmosphere.&width=400&height=400&seq=17&orientation=squarish"
+alt="Instagram Post 5"
+class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-instagram-line ri-lg"></i>
+</div>
+</div>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg group relative">
+<img src="https://readdy.ai/api/search-image?query=The%2520cafe%2520interior%2520with%2520customers%2520enjoying%2520treats%2520at%2520various%2520tables.%2520The%2520image%2520has%2520a%2520casual%252C%2520Instagram-worthy%2520style%2520with%2520warm%2520lighting%2520and%2520a%2520slightly%2520filtered%2520look.%2520The%2520atmosphere%2520is%2520cozy%2520and%2520inviting%2520with%2520some%2520decorative%2520elements%2520visible.&width=400&height=400&seq=18&orientation=squarish"
+alt="Instagram Post 6"
+class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-instagram-line ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<div class="flex flex-wrap justify-center gap-4">
+<div class="bg-white border border-gray-200 rounded-lg p-4 flex items-center gap-3">
+<div class="w-12 h-12 flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=A%2520simple%252C%2520clean%2520customer%2520avatar%2520photo%2520showing%2520a%2520smiling%2520woman%2520with%2520shoulder-length%2520hair%2520against%2520a%2520neutral%2520background.%2520The%2520image%2520is%2520cropped%2520to%2520a%2520circle%2520and%2520has%2520professional%2520quality%2520lighting.&width=100&height=100&seq=19&orientation=squarish"
+alt="Customer"
+class="w-full h-full object-cover rounded-full">
+</div>
+<div class="flex-1">
+<p class="text-gray-700 text-sm">"These brownies are absolutely divine! My weekend treat that I look forward to all week."</p>
+<p class="text-primary text-xs font-medium mt-1">Emma Thompson</p>
+</div>
+</div>
+<div class="bg-white border border-gray-200 rounded-lg p-4 flex items-center gap-3">
+<div class="w-12 h-12 flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=A%2520simple%252C%2520clean%2520customer%2520avatar%2520photo%2520showing%2520a%2520smiling%2520man%2520with%2520short%2520hair%2520and%2520glasses%2520against%2520a%2520neutral%2520background.%2520The%2520image%2520is%2520cropped%2520to%2520a%2520circle%2520and%2520has%2520professional%2520quality%2520lighting.&width=100&height=100&seq=20&orientation=squarish"
+alt="Customer"
+class="w-full h-full object-cover rounded-full">
+</div>
+<div class="flex-1">
+<p class="text-gray-700 text-sm">"The white chocolate macadamia blondie paired with their flat white is my perfect afternoon treat."</p>
+<p class="text-primary text-xs font-medium mt-1">James Wilson</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-darkBrown text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="font-['Pacifico'] text-3xl text-primary mb-6">Blondie Brownie</div>
+<p class="text-gray-300 mb-6">Handcrafted treats baked with love in Northern England since 2018.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full hover:bg-primary/30 transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full hover:bg-primary/30 transition-colors">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full hover:bg-primary/30 transition-colors">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full hover:bg-primary/30 transition-colors">
+<i class="ri-pinterest-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Shop All</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Brownies</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Blondies</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Gift Boxes</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Café Menu</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Our Story</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Contact Us</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-300">42 High Street, York, North Yorkshire, YO1 8QF</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-300">+44 1904 123 456</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-300">hello@blondiebrownie.co.uk</span>
+</li>
+</ul>
+<h3 class="text-xl font-semibold mt-8 mb-4">Opening Hours</h3>
+<ul class="space-y-2">
+<li class="flex justify-between">
+<span class="text-gray-300">Monday - Friday</span>
+<span class="text-gray-300">8:00 AM - 6:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="text-gray-300">Saturday</span>
+<span class="text-gray-300">9:00 AM - 7:00 PM</span>
+</li>
+<li class="flex justify-between">
+<span class="text-gray-300">Sunday</span>
+<span class="text-gray-300">10:00 AM - 5:00 PM</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Newsletter</h3>
+<p class="text-gray-300 mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
+<form class="mb-6">
+<div class="flex flex-col gap-3">
+<input type="email" placeholder="Your email address" class="bg-white/10 border-none text-white placeholder-gray-400 px-4 py-3 rounded w-full focus:bg-white/20 transition-colors">
+<button type="submit" class="bg-primary text-white px-4 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Subscribe</button>
+</div>
+</form>
+<h3 class="text-xl font-semibold mb-4">We Accept</h3>
+<div class="flex flex-wrap gap-3">
+<div class="w-10 h-6 flex items-center justify-center bg-white/10 rounded">
+<i class="ri-visa-fill ri-lg"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center bg-white/10 rounded">
+<i class="ri-mastercard-fill ri-lg"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center bg-white/10 rounded">
+<i class="ri-paypal-fill ri-lg"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center bg-white/10 rounded">
+<i class="ri-apple-fill ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Blondie Brownie. All rights reserved.</p>
+<div class="flex flex-wrap gap-4 text-sm">
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">Shipping Policy</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">FAQs</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Shopping Cart Sidebar -->
+<div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+<div class="h-full flex flex-col">
+<div class="p-4 border-b flex justify-between items-center">
+<h3 class="font-semibold text-lg">Your Cart (3)</h3>
+<button id="close-cart" class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto p-4">
+<div class="space-y-4">
+<!-- Cart Item 1 -->
+<div class="flex gap-4 pb-4 border-b">
+<div class="w-20 h-20 rounded overflow-hidden flex-shrink-0">
+<img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520a%2520decadent%2520chocolate%2520brownie%2520with%2520a%2520fudgy%2520center%2520and%2520slightly%2520crackled%2520top%252C%2520garnished%2520with%2520a%2520light%2520dusting%2520of%2520cocoa%2520powder.%2520The%2520brownie%2520sits%2520on%2520a%2520rustic%2520wooden%2520surface%2520with%2520some%2520chocolate%2520chunks%2520and%2520nuts%2520scattered%2520nearby.%2520Warm%252C%2520natural%2520lighting%2520creates%2520an%2520inviting%2520atmosphere.&width=200&height=200&seq=21&orientation=squarish"
+alt="Classic Chocolate Brownie"
+class="w-full h-full object-cover">
+</div>
+<div class="flex-1">
+<h4 class="font-medium">Classic Chocolate Brownie</h4>
+<div class="flex items-center mt-1 mb-2">
+<div class="flex items-center border rounded-full overflow-hidden">
+<button class="w-6 h-6 flex items-center justify-center bg-gray-100 text-gray-600">-</button>
+<span class="w-8 text-center text-sm">2</span>
+<button class="w-6 h-6 flex items-center justify-center bg-gray-100 text-gray-600">+</button>
+</div>
+</div>
+<div class="flex justify-between">
+<span class="text-primary font-medium">£7.90</span>
+<button class="text-gray-400 hover:text-red-500">
+<i class="ri-delete-bin-line"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="flex gap-4 pb-4 border-b">
+<div class="w-20 h-20 rounded overflow-hidden flex-shrink-0">
+<img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520a%2520golden%2520blondie%2520bar%2520with%2520white%2520chocolate%2520chunks%2520and%2520macadamia%2520nuts%2520visible%2520throughout.%2520The%2520blondie%2520has%2520a%2520perfect%2520buttery%2520sheen%2520and%2520sits%2520on%2520a%2520rustic%2520wooden%2520surface%2520with%2520some%2520white%2520chocolate%2520pieces%2520and%2520nuts%2520scattered%2520nearby.%2520Warm%252C%2520natural%2520lighting%2520creates%2520an%2520inviting%2520atmosphere.&width=200&height=200&seq=22&orientation=squarish"
+alt="White Chocolate Macadamia Blondie"
+class="w-full h-full object-cover">
+</div>
+<div class="flex-1">
+<h4 class="font-medium">White Chocolate Macadamia Blondie</h4>
+<div class="flex items-center mt-1 mb-2">
+<div class="flex items-center border rounded-full overflow-hidden">
+<button class="w-6 h-6 flex items-center justify-center bg-gray-100 text-gray-600">-</button>
+<span class="w-8 text-center text-sm">1</span>
+<button class="w-6 h-6 flex items-center justify-center bg-gray-100 text-gray-600">+</button>
+</div>
+</div>
+<div class="flex justify-between">
+<span class="text-primary font-medium">£4.25</span>
+<button class="text-gray-400 hover:text-red-500">
+<i class="ri-delete-bin-line"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Cart Item 3 -->
+<div class="flex gap-4 pb-4 border-b">
+<div class="w-20 h-20 rounded overflow-hidden flex-shrink-0">
+<img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520a%2520raspberry%2520white%2520chocolate%2520blondie%2520with%2520visible%2520raspberry%2520swirls%2520and%2520white%2520chocolate%2520chunks.%2520The%2520blondie%2520has%2520a%2520beautiful%2520pink%2520marbled%2520effect%2520and%2520sits%2520on%2520a%2520rustic%2520wooden%2520surface%2520with%2520some%2520fresh%2520raspberries%2520and%2520white%2520chocolate%2520pieces%2520scattered%2520nearby.%2520Warm%252C%2520natural%2520lighting%2520creates%2520an%2520inviting%2520atmosphere.&width=200&height=200&seq=23&orientation=squarish"
+alt="Raspberry White Chocolate Blondie"
+class="w-full h-full object-cover">
+</div>
+<div class="flex-1">
+<h4 class="font-medium">Raspberry White Chocolate Blondie</h4>
+<div class="flex items-center mt-1 mb-2">
+<div class="flex items-center border rounded-full overflow-hidden">
+<button class="w-6 h-6 flex items-center justify-center bg-gray-100 text-gray-600">-</button>
+<span class="w-8 text-center text-sm">1</span>
+<button class="w-6 h-6 flex items-center justify-center bg-gray-100 text-gray-600">+</button>
+</div>
+</div>
+<div class="flex justify-between">
+<span class="text-primary font-medium">£4.25</span>
+<button class="text-gray-400 hover:text-red-500">
+<i class="ri-delete-bin-line"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 border-t">
+<div class="space-y-3 mb-4">
+<div class="flex justify-between">
+<span class="text-gray-600">Subtotal</span>
+<span class="font-medium">£16.40</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Shipping</span>
+<span class="font-medium">£3.95</span>
+</div>
+<div class="flex justify-between font-semibold text-lg">
+<span>Total</span>
+<span>£20.35</span>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors mb-3">Checkout</button>
+<button id="continue-shopping" class="w-full border-2 border-primary text-primary py-3 !rounded-button whitespace-nowrap hover:bg-primary/10 transition-colors">Continue Shopping</button>
+</div>
+</div>
+</div>
+<div id="cart-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+<script id="cart-interaction">
+document.addEventListener('DOMContentLoaded', function() {
+const cartIcon = document.querySelector('.ri-shopping-bag-line').parentNode;
+const cartSidebar = document.getElementById('cart-sidebar');
+const cartOverlay = document.getElementById('cart-overlay');
+const closeCartBtn = document.getElementById('close-cart');
+const continueShoppingBtn = document.getElementById('continue-shopping');
+function openCart() {
+cartSidebar.classList.remove('translate-x-full');
+cartOverlay.classList.add('opacity-100');
+cartOverlay.classList.remove('pointer-events-none');
+document.body.style.overflow = 'hidden';
+}
+function closeCart() {
+cartSidebar.classList.add('translate-x-full');
+cartOverlay.classList.remove('opacity-100');
+cartOverlay.classList.add('pointer-events-none');
+document.body.style.overflow = '';
+}
+cartIcon.addEventListener('click', openCart);
+closeCartBtn.addEventListener('click', closeCart);
+continueShoppingBtn.addEventListener('click', closeCart);
+cartOverlay.addEventListener('click', closeCart);
+});
+</script>
+</body>
+</html>
