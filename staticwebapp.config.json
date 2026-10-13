@@ -1,0 +1,13 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/assets/*",
+      "/about/*",
+      "/cv/*",
+      "/hero/*",
+      "/projects/*",
+      "/*.{ico,pdf,png,jpg,jpeg,svg,mp4}"
+    ]
+  }
+}
